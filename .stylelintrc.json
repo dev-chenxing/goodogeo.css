@@ -1,0 +1,15 @@
+{
+    "extends": ["stylelint-config-standard"],
+    "reportNeedlessDisables": true,
+    "rules": {
+        "import-notation": ["string"],
+        "comment-empty-line-before": null
+    },
+    "overrides": [
+        {
+            "files": ["src/**/*.scss"],
+            "customSyntax": "postcss-scss",
+            "plugins": ["stylelint-scss"]
+        }
+    ]
+}
