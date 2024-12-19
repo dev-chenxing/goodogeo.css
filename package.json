@@ -2,9 +2,10 @@
     "name": "goodogeo.css",
     "version": "1.0.0",
     "description": "CSS to capture the good o' geocities website design",
-    "main": "scripts/dist.js",
+    "type": "module",
     "scripts": {
-        "stylelint": "stylelint --quiet --rd ./src/**/*.scss"
+        "stylelint": "stylelint --quiet --rd ./src/**/*.scss",
+        "build": "postcss src/index.scss --config postcss.config.cjs -o dist/goodogeo.css --map"
     },
     "keywords": [
         "css",
@@ -13,9 +14,22 @@
     "author": "dev-chenxing",
     "license": "MIT",
     "devDependencies": {
+        "autoprefixer": "^10.4.20",
+        "fs-extra": "^11.2.0",
+        "postcss-cli": "^11.0.0",
+        "postcss-import": "^16.1.0",
         "postcss-scss": "^4.0.9",
         "stylelint": "^16.12.0",
         "stylelint-config-standard": "^36.0.1",
         "stylelint-scss": "^6.10.0"
-    }
+    },
+    "browserslist": [
+        "last 10 Chrome versions",
+        "last 4 Firefox versions",
+        "last 3 Safari versions",
+        "not Safari 12",
+        "last 4 Edge versions",
+        "not Edge <= 18",
+        "Firefox ESR"
+    ]
 }
