@@ -387,8 +387,33 @@ template {
     display: none;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
-    display: grid;
+    background: url("assets/texture.gif");
+    color: #ccffcc;
+}
+
+div {
+    text-align: center;
+    font-family: "Comic Sans MS";
+    color: white;
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+table {
+    border: 1px solid white;
+    background-color: blue;
+}
+
+.text-xs {
+    font-size: 10px;
 }
 
 /*# sourceMappingURL=goodogeo.css.map */
