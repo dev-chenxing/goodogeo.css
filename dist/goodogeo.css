@@ -392,10 +392,12 @@ template {
 }
 
 body {
-	background: url("assets/texture.gif");
+	background: url("assets/star.gif");
 	color: white;
-  font-family: "Comic Sans MS";
-  font-size: 13px;
+	font-family: "Comic Sans MS";
+	font-size: 13px;
+	margin-inline: max(0px, ((100% - 64rem) / 2));
+  padding: 0 10px;
 }
 
 div {
@@ -403,35 +405,44 @@ div {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-  justify-content: center;
-  margin: 10px 0;
+	justify-content: center;
+	margin: 10px 0;
+	line-height: 1.4;
 }
 
 section {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-  margin: 1px;
-}
-
-table {
-	border: 1px solid white;
-	background-color: #330033;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	margin: 1px;
 }
 
 td {
-	border: 1px solid lightgreen;
-  padding: 1px;
-  margin: 1px;
+	max-width: 320px;
+}
+
+table:nth-of-type(1) {
+	border: 1px solid white;
+	background-color: #330033;
+	td {
+		border: 1px solid lightgreen;
+		padding: 1px;
+		margin: 1px;
+	}
 }
 
 a {
 	display: flex;
 	text-decoration: none;
 	color: yellow;
-  margin-left: 2px;
+	margin-left: 2px;
+	&:hover{
+		color: red;
+		text-decoration: underline overline;
+		cursor: pointer;
+	}
 }
 
 hr {
@@ -441,6 +452,10 @@ hr {
 h1 {
 	font-size: 32px;
 	color:#99FFFF;
+}
+
+marquee {
+	width: 85%;
 }
 
 /*# sourceMappingURL=goodogeo.css.map */

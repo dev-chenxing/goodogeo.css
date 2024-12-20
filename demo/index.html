@@ -14,10 +14,6 @@
             You entered 陈刑's Page of Cool Links on <span x-data x-text="new Date()"></span>
 		</div>
 		<div>
-			<img src="../dist/assets/new.gif" alt="new"/>
-			<img src="../dist/assets/arrow_blue.gif" alt="new"/>
-		</div>
-		<div>
 			<hr>
 			<h1>
 				<img src="../dist/assets/eyesroll.gif" alt="rolling eyeballs"/>
@@ -26,14 +22,42 @@
             </h1>
             <table><tbody>
                 <tr>
-                    <td><section><img src="../dist/assets/bullet.gif"/><a href="#">Shvieonc</a></section></td>
-                    <td><section><img src="../dist/assets/bullet.gif"/><a href="#">Vwdf Wdhosadfno</a></section></td>
-                    <td><section><img src="../dist/assets/bullet.gif"/><a href="#">Gfenoign Swiogiob</a></section></td>
+                    <td><section><img src="../dist/assets/bullet.gif"/><a href="https://alpinejs.dev/">Alpine</a></section></td>
+                    <td><section><img src="../dist/assets/bullet.gif"/><a href="https://bulbapedia.bulbagarden.net/wiki/Appendix:Platinum_walkthrough">Pokemon Platinum</a></section></td>
+                    <td><section><img src="../dist/assets/bullet.gif"/><a href="https://www.youtube.com/watch?v=TVh2Po0d-B8">Shoe Shine</a></section></td>
                 </tr>
                 <tr>
-                    <td><section><img src="../dist/assets/bullet.gif"/><a href="#">Iwefgp of Woivne</a></section></td>
-                    <td><section><img src="../dist/assets/bullet.gif"/><a href="#">Dfwejpd Oasnfen Gamerf</a></section></td>
-                    <td><section><img src="../dist/assets/bullet.gif"/><a href="#">Fevjrgknkn Macnrgjn Ogfdni Wh</a></section></td>
+                    <td><section><img src="../dist/assets/bullet.gif"/><a href="https://adonisjs.com/">AdonisJS</a></section></td>
+                    <td><section><img src="../dist/assets/bullet.gif"/><a href="https://onionui.github.io/">Miyoo Mini Plus</a></section></td>
+                    <td><section><img src="../dist/assets/bullet.gif"/><a href="https://github.com/">GitHub</a></section></td>
+                </tr>
+            </tbody></table>
+            <table><tbody><tr>
+                <td><div>
+                    <img src="../dist/assets/new.gif" alt="new"/>
+                    <img src="../dist/assets/arrow_blue.gif" alt="new"/>
+                </div></td>
+                <td><section><a href="https://vuejs.org/guide/introduction.html"><img src="../dist/assets/ball.gif"/></a>Vue.js</section></td>
+                <td><section><a href="https://svelte.dev/docs/svelte/overview"><img src="../dist/assets/ball.gif"/></a>Svelte</section></td>
+                <td><section><a href="https://github.com/postcss/postcss#usage"><img src="../dist/assets/ball.gif"/></a>PostCSS</section></td>
+                <td><section><a href="https://pugjs.org/api/getting-started.html"><img src="../dist/assets/ball.gif"/></a>Pug</section></td>
+            </tr></tbody></table>
+            <marquee><b>Last <img src="../dist/assets/update.gif" alt="updated"/> 2024/12/20</b></marquee>
+            <div>
+                Click here to send mail
+                <br>
+                <a href="mailto:chenxing.io@outlook.com?Subject=陈刑's Page of Cool Links">
+                    <img src="../dist/assets/mailme.gif" alt="SEND E-MAIL">
+                </a>
+            </div>
+            <table><tbody>
+                <tr>
+                    <td><img src="../dist/assets/mail.gif" alt="mail"></td>
+                    <td><i><div>
+                        If you have comments or suggestions about this website, e-mail 陈刑 at 
+                        <a href="mailto:chenxing.io@outlook.com?Subject=陈刑's Page of Cool Links">chenxing.io@outlook.com</a>
+                    </div></i></td>
+                    <td><a href="mailto:chenxing.io@outlook.com" title="mailto:chenxing.io@outlook.com"><img src="../dist/assets/mailbox.gif"/></a></td>
                 </tr>
             </tbody></table>
 		</div>
@@ -41,17 +65,16 @@
             <hr>
             OK... That's all there is to 陈刑's Page of Cool Links.
             <br>
-            If you have comments or suggestions, e-mail 陈刑 at 
-            <a href="mailto:chenxing.io@outlook.com?Subject=陈刑's Page of Cool Links">chenxing.io@outlook.com</a>
-        </div>
-        <div>
-            <table><tbody><tr><td><div>
-                Click here to send mail
-                <br>
-                <a href="mailto:chenxing.io@outlook.com?Subject=陈刑's Page of Cool Links">
-                    <img src="../dist/assets/mailme.gif" alt="SEND E-MAIL">
-                </a>
-            </div></td></tr></tbody></table>
+            <a x-data="{ 
+                printArticle(){
+                    if (window.print) {	
+                        setTimeout(() => window.print(),200);	
+                    } 
+                    else {
+                        alert('Press Ctrl+p on your keyboard to print article.');	
+                    }
+                }
+            }" @click="printArticle()"><img src="../dist/assets/print.gif" alt="Click to Print"/></a>
         </div>
         <div>
 			<table><tbody><tr><td><a href="index.html#PageTop">
