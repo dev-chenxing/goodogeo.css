@@ -387,6 +387,11 @@ template {
     display: none;
 }
 
+@font-face {
+	font-family: "DFKai-SB";
+	src: url("assets/fonts/kaiu.ttf");
+}
+
 * {
 	box-sizing: border-box;
 }
@@ -394,10 +399,10 @@ template {
 body {
 	background: url("assets/star.gif");
 	color: white;
-	font-family: "Comic Sans MS";
+	font-family: "Comic Sans MS", "DFKai-SB";
 	font-size: 13px;
 	margin-inline: max(0px, ((100% - 64rem) / 2));
-  padding: 0 10px;
+	padding: 0 10px;
 }
 
 div {
@@ -438,7 +443,7 @@ a {
 	text-decoration: none;
 	color: yellow;
 	margin-left: 2px;
-	&:hover{
+	&:hover {
 		color: red;
 		text-decoration: underline overline;
 		cursor: pointer;
@@ -451,7 +456,7 @@ hr {
 
 h1 {
 	font-size: 32px;
-	color:#99FFFF;
+	color: #99ffff;
 }
 
 marquee {
