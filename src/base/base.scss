@@ -1,0 +1,54 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: url("assets/texture.gif");
+	color: white;
+  font-family: "Comic Sans MS";
+  font-size: 13px;
+}
+
+div {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin: 1px;
+}
+
+table {
+	border: 1px solid white;
+	background-color: #330033;
+}
+td {
+	border: 1px solid lightgreen;
+  padding: 1px;
+  margin: 1px;
+}
+
+a {
+	display: flex;
+	text-decoration: none;
+	color: yellow;
+  margin-left: 2px;
+}
+
+hr {
+	width: 100%;
+}
+
+h1 {
+	font-size: 32px;
+	color:#99FFFF;
+}
